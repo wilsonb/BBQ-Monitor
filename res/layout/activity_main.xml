@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/currenttime"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/name0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space"
+        android:layout_centerHorizontal="true"
+        android:text="@string/name0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+
+
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/probe0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name0"
+        android:layout_centerHorizontal="true"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:id="@+id/setlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/probe0"
+        android:layout_centerHorizontal="true" >
+        <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".80"
+	        android:textColor="@color/black"
+	        android:text="@string/blank" />
+	    <TextView
+	        android:id="@+id/settext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textColor="@color/white"
+	        android:layout_weight=".20"
+	        android:text="@string/setpoint" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setvalue"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setlayout" >
+	    
+    	    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight=".80"
+		        android:textColor="@color/black"
+		        android:text="@string/blank" />
+    	    <TextView
+		        android:id="@+id/setpoint"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:textColor="@color/white"
+		        android:layout_weight=".20"
+		        android:text="@string/blank" />
+   	</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"        
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setvalue" >
+            
+            <TextView
+		        android:id="@+id/name1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/name1"
+		        android:textColor="@color/white" 
+		        android:gravity = "center"
+		        android:layout_weight="1" />
+            
+            <TextView
+		        android:id="@+id/name2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/name2"
+		        android:textColor="@color/white"
+		        android:gravity = "center"
+		        android:layout_weight="1" />
+
+            <TextView
+		        android:id="@+id/name3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/name3"
+		        android:textColor="@color/white"
+		        android:gravity = "center"
+		        android:layout_weight="1" />
+                     
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1" >
+
+        <TextView
+            android:id="@+id/probe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:textColor="@color/white"
+            android:gravity = "center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/probe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:textColor="@color/white"
+            android:gravity = "center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/probe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:textColor="@color/white"
+            android:gravity = "center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/debug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:text="@string/debug" />
+
+</RelativeLayout>

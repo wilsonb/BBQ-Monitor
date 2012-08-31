@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">BBQ Monitor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="title_activity_main">Current Status</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="currenttime">Current Time</string>
+    <string name="name0">Probe 0</string>
+    <string name="name1">Probe 1</string>
+    <string name="name2">Probe 2</string>
+    <string name="name3">Probe 3</string>
+    <string name="blank">--</string>
+    <string name="setpoint">Set</string>
+    <string name="debug">Debug Line</string>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <string name="title_activity_refresh">Refresh</string>
+
+</resources>
